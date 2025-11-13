@@ -21,7 +21,7 @@ interface SuccessRateCardProps {
 
 const SuccessRateCard: React.FC<SuccessRateCardProps> = ({ successData }) => {
   return (
-    <Card className="border border-gray-150 shadom-lg">
+    <Card className="border border-gray-150 shadow-lg">
       <CardHeader className="pb-3">
         <CardTitle className="text-lg font-semibold">
           Success rate
@@ -39,6 +39,7 @@ const SuccessRateCard: React.FC<SuccessRateCardProps> = ({ successData }) => {
               dataKey="value"
               startAngle={80}
               endAngle={-270}
+              nameKey="name"
             >
               {successData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={entry.color} />
