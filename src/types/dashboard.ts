@@ -4,17 +4,17 @@ export interface RevenueDataItem {
   revenue: number;
 }
 
-export interface SuccessDataItem {
-  name: string;
-  value: number;
-  color: string;
-}
+// export interface SuccessDataItem {
+//   name: string;
+//   value: number;
+//   color: string;
+// }
 
-export interface IssuesDataItem {
-  category: string;
-  value: number;
-  color: string;
-}
+// export interface IssuesDataItem {
+//   category: string;
+//   value: number;
+//   color: string;
+// }
 
 export interface Message {
   id: number;
@@ -23,4 +23,21 @@ export interface Message {
   message: string;
   avatar: string;
   color: string;
+}
+
+
+
+
+export interface SuccessDataItem {
+  name: string;
+  value: number;
+  color: string;
+  [key: string]: any;
+}
+
+export interface IssuesDataItem {
+  category: string;
+  value: number;
+  color: string;
+  [key: string]: any;
 }
